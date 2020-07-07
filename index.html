@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.getElementsByTagName("html")[0].className += " js";</script>
+  <link id="codyframe" rel="stylesheet" href="public/css/style.css">
+  <!-- browsers not supporting CSS variables -->
+  <script>
+    if (!('CSS' in window) || !CSS.supports('color', 'var(--color-var)')) { var cfStyle = document.getElementById('codyframe'); if (cfStyle) { var href = cfStyle.getAttribute('href'); href = href.replace('style.css', 'style-fallback.css'); cfStyle.setAttribute('href', href); } }
+  </script>
+  <title>Title</title>
+</head>
+
+<body>
+  <section
+    class="feature-v12 feature-v12--top feature-v12--left@md feature-v12--offset-sm feature-v12--offset-xl@md padding-y-xl">
+    <div class="container max-width-adaptive-lg">
+      <div class="grid flex-center">
+        <div class="col-10 col-5@md">
+          <div class="feature-v12__offset-item text-center text-left@md">
+            <h1 class="text-xxxl@sm">Apparently we had reached a great height in the atmosphere</h1>
+          </div>
+        </div>
+
+        <div class="col-7@md">
+          <figure class="feature-v12__bg-item">
+            <img class="block width-100%" src="public/img/me.jpg" alt="Image description">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="public/js/scripts.js"></script>
+</body>
+
+</html>
