@@ -15,12 +15,77 @@
 
 <body>
 
-  <div class="switch">
-    <input class="switch__input" type="checkbox" id="themeSwitch">
-    <label aria-hidden="true" class="switch__label" for="themeSwitch">On</label>
-    <div aria-hidden="true" class="switch__marker"></div>
+  <header class="dr-nav-header">
+    <div class="container position-relative height-100% flex items-center">
+      
+    </div>
+  </header>
+
+  <div class="dr-nav-control-wrapper">
+    <div class="container height-100% flex items-center">
+      <button
+        class="reset margin-left-auto dr-nav-control anim-menu-btn js-anim-menu-btn js-dr-nav-control js-tab-focus"
+        aria-label="Toggle navigation" aria-controls="dr-nav-id">
+        <svg class="dr-nav-control__bg" aria-hidden="true" viewBox="0 0 48 48">
+          <circle cx="24" cy="24" r="22" stroke-miterlimit="10" /></svg>
+        <i class="anim-menu-btn__icon anim-menu-btn__icon--arrow-right" aria-hidden="true"></i>
+      </button>
+    </div>
   </div>
 
+  <div class="drawer js-drawer" id="dr-nav-id">
+    <div class="drawer__content" role="alertdialog" aria-labelledby="dr-nav-title">
+      <div class="drawer__body flex flex-column js-drawer__body">
+        <header class="dr-nav-drawer-header padding-x-md">
+          <h4 id="dr-nav-title">Menu</h4>
+        </header>
+
+        <nav class="dr-nav padding-md" aria-label="Main">
+          <ul>
+            <li>
+              <a class="dr-nav__link" href="#0">
+                <span>News</span>
+                <span>35</span>
+              </a>
+            </li>
+
+            <li>
+              <a class="dr-nav__link" href="#0">
+                <span>Creative Industry</span>
+                <span>17</span>
+              </a>
+            </li>
+
+            <li>
+              <a class="dr-nav__link" href="#0">
+                <span>Video</span>
+                <span>12</span>
+              </a>
+            </li>
+
+            <li>
+              <a class="dr-nav__link" href="#0">
+                <span>Photography</span>
+                <span>24</span>
+              </a>
+            </li>
+
+            <li>
+              <a class="dr-nav__link" href="#0">
+                <span>Tutorials</span>
+                <span>18</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="switch">
+          <input class="switch__input" type="checkbox" id="themeSwitch">
+          <label aria-hidden="true" class="switch__label" for="themeSwitch">On</label>
+          <div aria-hidden="true" class="switch__marker"></div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <section
     class="feature-v12 feature-v12--top feature-v12--left@md feature-v12--offset-sm feature-v12--offset-xl@md padding-y-xl">
@@ -36,6 +101,7 @@
           <figure class="feature-v12__bg-item">
             <img class="block width-100%" src="public/img/me.jpg" alt="Image description">
           </figure>
+
         </div>
       </div>
     </div>
@@ -46,126 +112,136 @@
     <div class="margin-bottom-lg">
       <h1 class="text-center">Vertical Timeline</h1>
     </div>
-  
+
     <div class="container max-width-adaptive-lg">
       <div class="v-timeline js-v-timeline" data-animation="on">
         <section class="v-timeline__section js-v-timeline__section">
-          <div class="v-timeline__marker bg-contrast-high border border-3 border-contrast-lower" aria-hidden="true"></div>
-    
+          <div class="v-timeline__marker bg-contrast-high border border-3 border-contrast-lower" aria-hidden="true">
+          </div>
+
           <div class="v-timeline__items-group">
             <div class="v-timeline__item bg padding-md radius-md shadow-xs">
               <div class="v-timeline__date margin-bottom-sm">
                 <time class="v-timeline__date-value" datetime="2020-03-18T00:00">Mar 18, 2020</time>
               </div>
-    
+
               <div class="text-component">
                 <h2>Title of item 1</h2>
-      
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam hic dicta, quos reprehenderit quidem omnis officiis fuga nostrum.</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam hic dicta, quos reprehenderit quidem
+                  omnis officiis fuga nostrum.</p>
               </div>
-    
+
               <div class="margin-top-md">
                 <a class="btn btn--primary" href="#0">Read More</a>
               </div>
             </div>
           </div>
         </section>
-  
+
         <section class="v-timeline__section js-v-timeline__section">
-          <div class="v-timeline__marker bg-contrast-high border border-3 border-contrast-lower" aria-hidden="true"></div>
-    
+          <div class="v-timeline__marker bg-contrast-high border border-3 border-contrast-lower" aria-hidden="true">
+          </div>
+
           <div class="v-timeline__items-group">
             <div class="v-timeline__item bg padding-md radius-md shadow-xs">
               <div class="v-timeline__date margin-bottom-sm">
                 <time class="v-timeline__date-value" datetime="2020-03-26T00:00">Mar 26, 2020</time>
               </div>
-    
+
               <div class="text-component">
                 <h2>Title of item 2</h2>
-      
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex numquam eveniet earum ad ratione reprehenderit nihil, mollitia adipisci cum eaque?</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex numquam eveniet earum ad ratione
+                  reprehenderit nihil, mollitia adipisci cum eaque?</p>
               </div>
-    
+
               <div class="margin-top-md">
                 <a class="btn btn--primary" href="#0">Read More</a>
               </div>
             </div>
-  
+
             <div class="v-timeline__item bg padding-md radius-md shadow-xs">
               <div class="text-component">
                 <h2>Title of item 3</h2>
-      
+
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, totam.</p>
               </div>
             </div>
           </div>
         </section>
-  
+
         <section class="v-timeline__section js-v-timeline__section">
-          <div class="v-timeline__marker bg-contrast-high border border-3 border-contrast-lower" aria-hidden="true"></div>
-    
+          <div class="v-timeline__marker bg-contrast-high border border-3 border-contrast-lower" aria-hidden="true">
+          </div>
+
           <div class="v-timeline__items-group">
             <div class="v-timeline__item bg padding-md radius-md shadow-xs">
               <div class="v-timeline__date margin-bottom-sm">
                 <time class="v-timeline__date-value" datetime="2020-04-08T00:00">Apr 08, 2020</time>
               </div>
-    
+
               <div class="text-component">
                 <h2>Title of item 4</h2>
-      
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi praesentium dolore debitis cum nesciunt cumque placeat voluptatibus natus, necessitatibus numquam sunt, laborum possimus id?</p>
-  
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi praesentium dolore debitis cum
+                  nesciunt cumque placeat voluptatibus natus, necessitatibus numquam sunt, laborum possimus id?</p>
+
                 <figure class="text-component__block">
-                  <img src="../../../app/assets/img/vertical-timeline-img-1.jpg" alt="Image description">
+                  <img src="public/img/me.jpg" alt="Image description">
                 </figure>
               </div>
             </div>
           </div>
         </section>
-  
+
         <section class="v-timeline__section js-v-timeline__section">
-          <div class="v-timeline__marker bg-contrast-high border border-3 border-contrast-lower" aria-hidden="true"></div>
-    
+          <div class="v-timeline__marker bg-contrast-high border border-3 border-contrast-lower" aria-hidden="true">
+          </div>
+
           <div class="v-timeline__items-group">
             <div class="v-timeline__item bg padding-md radius-md shadow-xs">
               <div class="v-timeline__date margin-bottom-sm">
                 <time class="v-timeline__date-value" datetime="2020-05-17T00:00">May 17, 2020</time>
               </div>
-    
+
               <div class="text-component">
                 <h2>Title of item 5</h2>
-      
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam hic dicta, quos reprehenderit quidem omnis officiis fuga nostrum.</p>
-  
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam hic dicta, quos reprehenderit quidem
+                  omnis officiis fuga nostrum.</p>
+
                 <ul>
                   <li>List item 1</li>
                   <li>List item 2</li>
                   <li>List item 3</li>
                 </ul>
               </div>
-    
+
               <div class="margin-top-md">
                 <a class="btn btn--primary" href="#0">Read More</a>
               </div>
             </div>
           </div>
         </section>
-  
+
         <section class="v-timeline__section js-v-timeline__section">
-          <div class="v-timeline__marker bg-contrast-high border border-3 border-contrast-lower" aria-hidden="true"></div>
-    
+          <div class="v-timeline__marker bg-contrast-high border border-3 border-contrast-lower" aria-hidden="true">
+          </div>
+
           <div class="v-timeline__items-group">
             <div class="v-timeline__item bg padding-md radius-md shadow-xs">
               <div class="v-timeline__date margin-bottom-sm">
                 <time class="v-timeline__date-value" datetime="2020-06-01T00:00">Jun 01, 2020</time>
               </div>
-    
+
               <div class="text-component">
                 <h2>Title of item 6</h2>
-      
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam hic dicta, quos reprehenderit quidem omnis officiis fuga nostrum.</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam hic dicta, quos reprehenderit quidem
+                  omnis officiis fuga nostrum.</p>
               </div>
-    
+
               <div class="margin-top-md">
                 <a class="btn btn--primary" href="#0">Read More</a>
               </div>
@@ -178,8 +254,11 @@
 
 
   <script src="public/js/scripts.js"></script>
-  <script src="public/js/components/_1_vertical-timeline.js"></script>
   <script src="public/js/theme_switch.js"></script>
+  <script src="public/js/components/_1_vertical-timeline.js"></script>
+  <script src="public/js/components/_2_drawer-navigation.js"></script>
+  <script src="public/js/components/_1_anim-menu-btn.js"></script>
+  <script src="public/js/components/_1_drawer.js"></script>
 </body>
 
 </html>
