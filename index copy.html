@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.getElementsByTagName("html")[0].className += " js";</script>
+  <link id="codyframe" rel="stylesheet" href="public/css/style.css">
+  <!-- browsers not supporting CSS variables -->
+  <script>
+    if (!('CSS' in window) || !CSS.supports('color', 'var(--color-var)')) { var cfStyle = document.getElementById('codyframe'); if (cfStyle) { var href = cfStyle.getAttribute('href'); href = href.replace('style.css', 'style-fallback.css'); cfStyle.setAttribute('href', href); } }
+  </script>
+  <title>Title</title>
+</head>
+
+<body>
+
+  <header class="dr-nav-header">
+    <div class="container position-relative height-100% flex items-center">
+
+    </div>
+  </header>
+
+  <div class="dr-nav-control-wrapper">
+    <div class="container height-100% flex items-center">
+      <button
+        class="reset margin-left-auto dr-nav-control anim-menu-btn js-anim-menu-btn js-dr-nav-control js-tab-focus"
+        aria-label="Toggle navigation" aria-controls="dr-nav-id">
+        <svg class="dr-nav-control__bg" aria-hidden="true" viewBox="0 0 48 48">
+          <circle cx="24" cy="24" r="22" stroke-miterlimit="10" /></svg>
+        <i class="anim-menu-btn__icon anim-menu-btn__icon--arrow-right" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="drawer js-drawer" id="dr-nav-id">
+    <div class="drawer__content" role="alertdialog" aria-labelledby="dr-nav-title">
+      <div class="drawer__body flex flex-column js-drawer__body">
+        <header class="dr-nav-drawer-header padding-x-md">
+          <h4 id="dr-nav-title">Menu</h4>
+        </header>
+
+        <nav class="dr-nav padding-md" aria-label="Main">
+          <ul>
+            <li>
+              <a class="dr-nav__link" href="#0">
+                <span>News</span>
+                <span>35</span>
+              </a>
+            </li>
+
+            <li>
+              <a class="dr-nav__link" href="#0">
+                <span>Creative Industry</span>
+                <span>17</span>
+              </a>
+            </li>
+
+            <li>
+              <a class="dr-nav__link" href="#0">
+                <span>Video</span>
+                <span>12</span>
+              </a>
+            </li>
+
+            <li>
+              <a class="dr-nav__link" href="#0">
+                <span>Photography</span>
+                <span>24</span>
+              </a>
+            </li>
+
+            <li>
+              <a class="dr-nav__link" href="#0">
+                <span>Tutorials</span>
+                <span>18</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <footer class="padding-md margin-top-auto">
+          <div class="switch padding-md ">
+            <input class="switch__input" type="checkbox" id="themeSwitch">
+            <label aria-hidden="true" class="switch__label" for="themeSwitch">On</label>
+            <div aria-hidden="true" class="switch__marker"></div>
+          </div>
+        </footer>
+
+        <!-- <div class="switch padding-md">
+          <input class="switch__input" type="checkbox" id="themeSwitch">
+          <label aria-hidden="true" class="switch__label" for="themeSwitch">On</label>
+          <div aria-hidden="true" class="switch__marker"></div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+  <section
+    class="feature-v12 feature-v12--top feature-v12--left@md feature-v12--offset-sm feature-v12--offset-xl@md padding-y-xl">
+    <div class="container max-width-adaptive-lg">
+      <div class="grid flex-center">
+        <div class="col-10 col-5@md">
+          <div class="feature-v12__offset-item text-center text-left@md">
+            <h1 class="text-xxxl@sm">Hi! I'm Seva! I'm not only developer but also bad designer</h1>
+          </div>
+        </div>
+
+        <div class="col-7@md">
+          <figure class="feature-v12__bg-item">
+            <img class="block width-100%" src="public/img/coconut.jpg" alt="Image description">
+          </figure>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="position-relative z-index-1 overflow-hidden padding-y-xl bg-contrast-lower">
+    <div class="margin-bottom-lg">
+      <h1 class="text-center">Vertical Timeline</h1>
+    </div>
+
+    <div class="container max-width-adaptive-lg">
+      <div class="v-timeline js-v-timeline" data-animation="on">
+        <section class="v-timeline__section js-v-timeline__section">
+          <div class="v-timeline__marker bg-contrast-high border border-3 border-contrast-lower" aria-hidden="true">
+          </div>
+
+          <div class="v-timeline__items-group">
+            <div class="v-timeline__item bg padding-md radius-md shadow-xs">
+              <div class="v-timeline__date margin-bottom-sm">
+                <time class="v-timeline__date-value" datetime="2020-03-18T00:00">Mar 18, 2020</time>
+              </div>
+
+              <div class="text-component">
+                <h2>Title of item 1</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam hic dicta, quos reprehenderit quidem
+                  omnis officiis fuga nostrum.</p>
+              </div>
+
+              <div class="margin-top-md">
+                <a class="btn btn--primary" href="#0">Read More</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="v-timeline__section js-v-timeline__section">
+          <div class="v-timeline__marker bg-contrast-high border border-3 border-contrast-lower" aria-hidden="true">
+          </div>
+
+          <div class="v-timeline__items-group">
+            <div class="v-timeline__item bg padding-md radius-md shadow-xs">
+              <div class="v-timeline__date margin-bottom-sm">
+                <time class="v-timeline__date-value" datetime="2020-03-26T00:00">Mar 26, 2020</time>
+              </div>
+
+              <div class="text-component">
+                <h2>Title of item 2</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex numquam eveniet earum ad ratione
+                  reprehenderit nihil, mollitia adipisci cum eaque?</p>
+              </div>
+
+              <div class="margin-top-md">
+                <a class="btn btn--primary" href="#0">Read More</a>
+              </div>
+            </div>
+
+            <div class="v-timeline__item bg padding-md radius-md shadow-xs">
+              <div class="text-component">
+                <h2>Title of item 3</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, totam.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="v-timeline__section js-v-timeline__section">
+          <div class="v-timeline__marker bg-contrast-high border border-3 border-contrast-lower" aria-hidden="true">
+          </div>
+
+          <div class="v-timeline__items-group">
+            <div class="v-timeline__item bg padding-md radius-md shadow-xs">
+              <div class="v-timeline__date margin-bottom-sm">
+                <time class="v-timeline__date-value" datetime="2020-04-08T00:00">Apr 08, 2020</time>
+              </div>
+
+              <div class="text-component">
+                <h2>Title of item 4</h2>
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi praesentium dolore debitis cum
+                  nesciunt cumque placeat voluptatibus natus, necessitatibus numquam sunt, laborum possimus id?</p>
+
+                <figure class="text-component__block">
+                  <img src="public/img/me.jpg" alt="Image description">
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="v-timeline__section js-v-timeline__section">
+          <div class="v-timeline__marker bg-contrast-high border border-3 border-contrast-lower" aria-hidden="true">
+          </div>
+
+          <div class="v-timeline__items-group">
+            <div class="v-timeline__item bg padding-md radius-md shadow-xs">
+              <div class="v-timeline__date margin-bottom-sm">
+                <time class="v-timeline__date-value" datetime="2020-05-17T00:00">May 17, 2020</time>
+              </div>
+
+              <div class="text-component">
+                <h2>Title of item 5</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam hic dicta, quos reprehenderit quidem
+                  omnis officiis fuga nostrum.</p>
+
+                <ul>
+                  <li>List item 1</li>
+                  <li>List item 2</li>
+                  <li>List item 3</li>
+                </ul>
+              </div>
+
+              <div class="margin-top-md">
+                <a class="btn btn--primary" href="#0">Read More</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="v-timeline__section js-v-timeline__section">
+          <div class="v-timeline__marker bg-contrast-high border border-3 border-contrast-lower" aria-hidden="true">
+          </div>
+
+          <div class="v-timeline__items-group">
+            <div class="v-timeline__item bg padding-md radius-md shadow-xs">
+              <div class="v-timeline__date margin-bottom-sm">
+                <time class="v-timeline__date-value" datetime="2020-06-01T00:00">Jun 01, 2020</time>
+              </div>
+
+              <div class="text-component">
+                <h2>Title of item 6</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam hic dicta, quos reprehenderit quidem
+                  omnis officiis fuga nostrum.</p>
+              </div>
+
+              <div class="margin-top-md">
+                <a class="btn btn--primary" href="#0">Read More</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="container max-width-sm min-height-100vh flex flex-center">
+    <div class="text-component text-center">
+      <h1>Immersive Section Transition</h1>
+      <p>👇 Scroll down to see the effect</p>
+    </div>
+  </section>
+  
+  <!-- immersive section transition 👇 -->
+  <div class="bg-contrast-lower padding-top-xxl">
+    <div class="container max-width-adaptive-sm margin-bottom-lg">
+      <h2 class="text-center">Keep scrolling...</h2>
+    </div>
+  
+    <div class="immerse-section-tr padding-top-md js-immerse-section-tr">
+      <div class="immerse-section-tr__media js-immerse-section-tr__media">
+        <div class="container max-width-sm">
+          <!-- asset visible on small devices -->
+          <figure class="immerse-section-tr__figure immerse-section-tr__figure--3-4 hide@sm js-immerse-section-tr__figure">
+            <!-- <video src="public/img/immersive-section-transition-video-2.mp4" autoplay loop muted playsInline></video> -->
+            <img class="block width-100%" src="public/img/background.jpg" alt="Image description">
+          </figure>
+          <!-- asset visible on bigger devices -->
+          <figure class="immerse-section-tr__figure immerse-section-tr__figure--16-9 display@sm js-immerse-section-tr__figure">
+            <!-- <video src="public/img/immersive-section-transition-video-2.mp4" autoplay loop muted playsInline></video> -->
+            <img class="block width-100%" src="public/img/background.jpg" alt="Image description">
+          </figure>
+        </div>
+      </div>
+    
+      <section class="immerse-section-tr__content bg-transparent padding-y-xl margin-top-lg js-immerse-section-tr__content">
+        <!-- your content here -->
+        <div class="container max-width-adaptive-sm">
+          <div class="text-component line-height-lg v-space-md">
+            <h1>New Content</h1>
+        
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, harum.</p>
+        
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti hic at assumenda quibusdam officiis architecto aliquam reprehenderit enim voluptates, totam animi iusto illo incidunt nemo deserunt reiciendis maiores ex. Deserunt soluta, ad facilis ipsum consectetur aspernatur assumenda numquam ea adipisci architecto magnam, itaque culpa, in debitis nam voluptate repellendus. Nam.</p>
+        
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti hic at assumenda quibusdam officiis architecto aliquam reprehenderit enim voluptates, totam animi iusto illo incidunt nemo deserunt reiciendis maiores ex. Deserunt soluta, ad facilis ipsum consectetur aspernatur assumenda numquam ea adipisci architecto magnam, itaque culpa, in debitis nam voluptate repellendus. Nam.</p>
+        
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ipsam ut voluptas iste perferendis aperiam amet, voluptatem quis quod incidunt, hic aliquid sunt ullam cupiditate atque adipisci eos at, provident quasi earum praesentium! Expedita, illo, quis voluptatum neque facilis cum veritatis officia unde distinctio ipsum repellendus. Ea quae accusantium fuga iste nihil assumenda corporis dolorum sunt consequuntur deleniti quasi expedita a voluptate nemo vel natus qui, sint repellat reiciendis? Consequuntur ut culpa odio ad. Fugiat totam repellat harum odio ullam blanditiis iste cum, ipsam qui, inventore optio corrupti ab assumenda? Sequi eaque voluptatem dolore enim aut possimus ullam vel laboriosam nihil magnam recusandae, voluptatum molestias totam quae autem labore cupiditate reiciendis optio, eos tempora aliquam maxime hic. Maiores, hic totam? Doloribus eligendi, mollitia cupiditate quaerat harum, recusandae eveniet beatae quis est nemo rerum! Ratione, odit laboriosam soluta minus nobis vero dignissimos iste, totam animi ipsam deserunt earum blanditiis excepturi id unde asperiores atque, facilis aut nihil. Dolore nam laudantium nisi esse, aliquam dolorum beatae earum. Asperiores sapiente praesentium magni distinctio atque id amet impedit sed unde minus possimus obcaecati, repellendus, commodi facilis excepturi repudiandae nam totam similique perspiciatis eligendi, maxime corporis eius! Voluptatum non itaque harum, repellat sapiente enim sint?</p>
+        
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nisi cumque error laudantium aperiam, beatae hic facere asperiores reprehenderit fugiat, illo ea. Magni, eaque? Ab, eos saepe cupiditate asperiores consequatur deleniti dolor aliquid veritatis enim magnam dolorum accusamus quos fuga iusto, unde aperiam itaque eligendi! Laboriosam deleniti expedita exercitationem quasi debitis saepe laudantium molestiae totam. Labore perferendis asperiores cupiditate consectetur excepturi dolorum nisi veritatis ratione, quas dolore explicabo molestiae dolor saepe eos id magni nemo ipsa fugit illo ab esse?</p>
+        
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nisi cumque error laudantium aperiam, beatae hic facere asperiores reprehenderit fugiat, illo ea. Magni, eaque? Ab, eos saepe cupiditate asperiores consequatur deleniti dolor aliquid veritatis enim magnam dolorum accusamus quos fuga iusto, unde aperiam itaque eligendi! Laboriosam deleniti expedita exercitationem quasi debitis saepe laudantium molestiae totam. Labore perferendis asperiores cupiditate consectetur excepturi dolorum nisi veritatis ratione, quas dolore explicabo molestiae dolor saepe eos id magni nemo ipsa fugit illo ab esse?</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+
+  <script src="public/js/scripts.js"></script>
+  <script src="public/js/theme_switch.js"></script>
+  <script src="public/js/components/_1_vertical-timeline.js"></script>
+  <script src="public/js/components/_2_drawer-navigation.js"></script>
+  <script src="public/js/components/_1_anim-menu-btn.js"></script>
+  <script src="public/js/components/_1_drawer.js"></script>
+  <script src="public/js/components/_1_immersive-section-transition.js"></script>
+</body>
+
+</html>
