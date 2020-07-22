@@ -1,0 +1,25 @@
+#quote {
+  background-repeat: repeat;
+  overflow: hidden;
+  position: relative;
+}
+
+.overlayText {
+  color: #000;
+  position: absolute;
+  top: 0;
+}
+
+/* This is just some CSS styling to make the video fill 100% of its div */
+.videoContainer {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.videoContainer video {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/*# sourceMappingURL=hero_bg_video.css.map */
