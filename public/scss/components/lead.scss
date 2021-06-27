@@ -1,0 +1,124 @@
+#lead {
+    position: relative;
+    height: 100vh;
+    min-height: 500px;
+    max-height: 1080px;
+    background: url(../images/lead-bg.jpg);
+    background-size: cover;
+    padding: 15px;
+    overflow: hidden;
+}
+
+#lead-content {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    h1, h2 {
+        margin: 0;
+    }
+
+    h1 {
+        // color: #fff;
+        font-weight: 900;
+        font-size: 7vw;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        line-height: 0.9em;
+    }
+
+    h2 {
+        // color: var(--color-accent-lighter);
+        font-weight: 500;
+        font-size: 4vw;
+        margin-bottom: 15px;
+    }
+}
+
+#lead-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(var(--color-primary-light), 0.8);
+    z-index: 1;
+}
+
+.span-marks {
+    color: var(--color-primary);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#lead-down {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    bottom: 25px;
+}
+
+
+#skills {
+    padding: 50px 15px;
+    text-align: center;
+
+    h2 {
+        // color: $heading;
+        margin-bottom: 50px;
+    }
+
+    ul {
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+        max-width: 800px;
+    }
+
+    li {
+        display: inline-block;
+        margin: 7px;
+        padding: 5px 10px;
+        color: var(--color-white);
+        background: var(--color-primary);
+        // list-style: none;
+        // cursor: default;
+        font-weight: 300;
+        font-size: 1.2em;
+    }
+}
+
+
+
+#contact {
+    padding: 50px 15px;
+    text-align: center;
+}
+
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+
+    input, textarea {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border-radius: 4px;
+        border: none;
+        margin-bottom: 10px;
+        background: var(--color-contrast-lower);
+    }
+
+    textarea {
+        height: 150px;
+        resize: none;
+    }
+}

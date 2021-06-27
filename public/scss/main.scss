@@ -2,6 +2,10 @@
   color: var(--color-contrast-high);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .dark, .dark-theme {
   --color-black: hsl(0, 0%, 100%);
   --color-white: hsl(240, 8%, 12%);
@@ -24,9 +28,9 @@
   --color-bg: black
 }
 
-section, footer {
-  background-color: var(--color-bg);
-}
+// section, footer {
+//   background-color: var(--color-bg);
+// }
 
 //body:nth-child(2n+1) {
 //  @extend .dark-theme
